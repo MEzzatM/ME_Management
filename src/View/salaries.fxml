@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox alignment="CENTER" style="-fx-background-color: #7a48dd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.salariesControl">
+   <children>
+      <AnchorPane>
+         <children>
+            <AnchorPane fx:id="salariesContainer" prefHeight="804.0" prefWidth="1400.0" style="-fx-background-color: #7a48dd;">
+               <children>
+                  <Label alignment="CENTER" layoutX="524.0" layoutY="14.0" prefHeight="64.0" prefWidth="450.0" text="slaries">
+                     <font>
+                        <Font name="Stencil" size="52.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="462.0" layoutY="99.0" prefHeight="51.0" prefWidth="115.0" text="code">
+                     <font>
+                        <Font name="Serif Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="code" layoutX="565.0" layoutY="101.0" onKeyPressed="#codeEnter" prefHeight="43.0" prefWidth="314.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="517.0" layoutY="46.0" prefHeight="64.0" prefWidth="450.0" text="----------------------------------">
+                     <font>
+                        <Font name="Stencil" size="52.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="codeError" alignment="CENTER" layoutX="523.0" layoutY="136.0" prefHeight="46.0" prefWidth="398.0" text="Enter Correct Data" textFill="#bf1919">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="378.0" layoutY="151.0" prefHeight="64.0" prefWidth="742.0" text="---------------------------------------------------">
+                     <font>
+                        <Font name="Stencil" size="52.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="Enter" layoutX="894.0" layoutY="101.0" mnemonicParsing="false" onMouseClicked="#enter" prefHeight="46.0" prefWidth="142.0" text="Enter">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="payAll" layoutX="1032.0" layoutY="696.0" mnemonicParsing="false" onMouseClicked="#payAll" prefHeight="46.0" prefWidth="242.0" text="Pay All">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label fx:id="payError" alignment="CENTER" layoutX="594.0" layoutY="734.0" prefHeight="46.0" prefWidth="398.0" text="No Value To be Paied" textFill="#bf1919">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="71.0" layoutY="692.0" prefHeight="51.0" prefWidth="260.0" text="Total Salaries">
+                     <font>
+                        <Font name="Serif Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="total" layoutX="332.0" layoutY="694.0" prefHeight="46.0" prefWidth="260.0" promptText="product code">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+                  <TableView id="saletable" fx:id="table" layoutX="197.0" layoutY="195.0" onMouseClicked="#tableClick" prefHeight="490.0" prefWidth="1078.0" stylesheets="@application.css">
+                     <columns>
+                        <TableColumn fx:id="tableCode" prefWidth="262.39996337890625" text="Code" />
+                        <TableColumn fx:id="tableName" minWidth="0.0" prefWidth="281.6000061035156" text="Name" />
+                        <TableColumn fx:id="tableHours" prefWidth="153.5999755859375" text="Worked Hours" />
+                        <TableColumn fx:id="tableValue" prefWidth="177.5999755859375" text="Hour Value" />
+                        <TableColumn fx:id="tableTotal" prefWidth="200.800048828125" text="Total" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="infoContainer" prefHeight="804.0" prefWidth="1400.0" style="-fx-background-color: #7a48dd;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="474.0" layoutY="13.0" prefHeight="64.0" prefWidth="450.0" text="salary info.">
+                     <font>
+                        <Font name="Stencil" size="52.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="201.0" layoutY="101.0" prefHeight="51.0" prefWidth="115.0" text="code">
+                     <font>
+                        <Font name="Serif Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="employeeName" editable="false" layoutX="716.0" layoutY="104.0" onKeyPressed="#codeEnter" prefHeight="43.0" prefWidth="314.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="474.0" layoutY="45.0" prefHeight="64.0" prefWidth="450.0" text="----------------------------">
+                     <font>
+                        <Font name="Stencil" size="52.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="600.0" layoutY="100.0" prefHeight="51.0" prefWidth="115.0" text="Name">
+                     <font>
+                        <Font name="Serif Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="employeeCode" editable="false" layoutX="313.0" layoutY="104.0" prefHeight="46.0" prefWidth="286.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="Enter1" layoutX="32.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="46.0" prefWidth="142.0" text="Back">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TableView id="saletable" fx:id="employeeTable" layoutX="282.0" layoutY="182.0" onMouseClicked="#tableClick" prefHeight="490.0" prefWidth="910.0" stylesheets="@application.css">
+                     <columns>
+                        <TableColumn fx:id="employeeTableDay" prefWidth="253.6000213623047" text="Day" />
+                        <TableColumn fx:id="employeeTableAttendance" minWidth="0.0" prefWidth="220.79998779296875" text="Attendance" />
+                        <TableColumn fx:id="employeeTableDeparture" prefWidth="224.79998779296875" text="Departure" />
+                        <TableColumn fx:id="employeeTableHours" prefWidth="208.79998779296875" text="Total Hours" />
+                     </columns>
+                  </TableView>
+                  <Label alignment="CENTER" layoutX="944.0" layoutY="691.0" prefHeight="51.0" prefWidth="125.0" text="Salary">
+                     <font>
+                        <Font name="Serif Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="60.0" layoutY="691.0" prefHeight="51.0" prefWidth="230.0" text="Total Hours">
+                     <font>
+                        <Font name="Serif Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="employeeValue" editable="false" layoutX="714.0" layoutY="695.0" onKeyPressed="#codeEnter" prefHeight="46.0" prefWidth="195.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="502.0" layoutY="692.0" prefHeight="51.0" prefWidth="210.0" text="Hour Value">
+                     <font>
+                        <Font name="Serif Bold" size="39.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="employeeHours" editable="false" layoutX="291.0" layoutY="695.0" prefHeight="46.0" prefWidth="195.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="employeeSalary" editable="false" layoutX="1070.0" layoutY="693.0" onKeyPressed="#codeEnter" prefHeight="46.0" prefWidth="210.0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="426.0" layoutY="136.0" prefHeight="64.0" prefWidth="583.0" text="---------------------------------------">
+                     <font>
+                        <Font name="Stencil" size="52.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="pay" layoutX="1061.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#pay" prefHeight="46.0" prefWidth="242.0" text="Pay">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

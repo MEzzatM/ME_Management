@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" style="-fx-background-color: #7a48dd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.productsController">
+   <children>
+      <AnchorPane fx:id="findProductContainer" prefHeight="804.0" prefWidth="1400.0" style="-fx-background-color: #7a48dd;">
+         <children>
+            <Label alignment="CENTER" layoutX="524.0" layoutY="14.0" prefHeight="64.0" prefWidth="450.0" text="products">
+               <font>
+                  <Font name="Stencil" size="52.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="471.0" layoutY="100.0" prefHeight="51.0" prefWidth="115.0" text="code">
+               <font>
+                  <Font name="Serif Bold" size="39.0" />
+               </font>
+            </Label>
+            <TextField fx:id="code" layoutX="574.0" layoutY="102.0" onKeyPressed="#codeEnter" prefHeight="43.0" prefWidth="314.0" promptText="product code">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="524.0" layoutY="46.0" prefHeight="64.0" prefWidth="450.0" text="----------------------">
+               <font>
+                  <Font name="Stencil" size="52.0" />
+               </font>
+            </Label>
+            <Label fx:id="error" alignment="CENTER" layoutX="378.0" layoutY="151.0" prefHeight="64.0" prefWidth="742.0" text="---------------------------------------------------">
+               <font>
+                  <Font name="Stencil" size="52.0" />
+               </font>
+            </Label>
+            <TableView id="saletable" fx:id="table" layoutX="197.0" layoutY="195.0" prefHeight="576.0" prefWidth="1078.0" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="tableCode" prefWidth="262.39996337890625" text="Code" />
+                  <TableColumn fx:id="tableName" minWidth="0.0" prefWidth="281.6000061035156" text="Name" />
+                  <TableColumn fx:id="tablePrice" prefWidth="260.79998779296875" text="Price" />
+                  <TableColumn fx:id="tableAmount" prefWidth="270.39996337890625" text="Amount" />
+               </columns>
+            </TableView>
+            <Button fx:id="find" layoutX="899.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#find" prefHeight="46.0" prefWidth="142.0" text="Find">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="error" alignment="CENTER" layoutX="528.0" layoutY="136.0" prefHeight="46.0" prefWidth="406.0" text="Enter Correct Code" textFill="#990e0e">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="a" fx:id="mainContainer" prefHeight="750.0" prefWidth="1400.0" style="-fx-background-color: #7a48dd;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MainPageController">
+   <center>
+      <AnchorPane fx:id="mainBar" prefHeight="750.0" prefWidth="1072.0" style="-fx-background-color: #0cb4cc;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="logoPage" prefHeight="804.0" prefWidth="1084.0" style="-fx-background-color: #0cb4cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="logo1" alignment="CENTER" layoutX="81.0" layoutY="-24.0" text="ME" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="700.0" />
+                     </font>
+                     <padding>
+                        <Insets top="-22.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="111.0" layoutY="610.0" prefHeight="122.0" prefWidth="898.0" text="Management Software" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="75.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="92.0" layoutY="671.0" prefHeight="92.0" prefWidth="937.0" text="-------------------------------------------------" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="75.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="salesProcessPage" prefHeight="804.0" prefWidth="1084.0" style="-fx-background-color: #0cb4cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="selling" alignment="CENTER" layoutX="188.0" layoutY="582.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="selling" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="return1" alignment="CENTER" layoutX="636.0" layoutY="582.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="return" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="returnImage" fitHeight="360.0" fitWidth="260.0" layoutX="636.0" layoutY="222.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/return.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.0884210541844368" blue="0.8842105269432068" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="sellingImage" fitHeight="360.0" fitWidth="260.0" layoutX="188.0" layoutY="222.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/sell1.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.9578947424888611" green="0.1117543876171112" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="storagePage" prefHeight="804.0" prefWidth="1084.0" style="-fx-background-color: #0cb4cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="addLabel" alignment="CENTER" layoutX="188.0" layoutY="582.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="endSoonLabel" alignment="CENTER" layoutX="636.0" layoutY="582.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="end soon" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="endSoonImage" fitHeight="360.0" fitWidth="260.0" layoutX="636.0" layoutY="222.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/soon.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.8286728858947754" green="0.949999988079071" blue="0.17100000381469727" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="addImage" fitHeight="360.0" fitWidth="260.0" layoutX="188.0" layoutY="222.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/add.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="employeesPage" prefHeight="804.0" prefWidth="1084.0" style="-fx-background-color: #0cb4cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="newEmployeeLabel" alignment="CENTER" layoutX="646.0" layoutY="339.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="new employee" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="updateEmployeeLabel" alignment="CENTER" layoutX="646.0" layoutY="731.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="update employee" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="attendanceLabel" alignment="CENTER" layoutX="112.0" layoutY="730.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="attendance" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="40.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="updateEmployeeImage" fitHeight="320.0" fitWidth="260.0" layoutX="646.0" layoutY="410.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/OIP%20(2).jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.5157894492149353" green="0.5157894492149353" blue="0.5157894492149353" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="newEmployeeImage" fitHeight="320.0" fitWidth="260.0" layoutX="646.0" layoutY="18.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/newe.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="attendanceImage" fitHeight="320.0" fitWidth="260.0" layoutX="112.0" layoutY="410.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/att.jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color green="0.5647368431091309" blue="0.9157894849777222" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </ImageView>
+                  <Label fx:id="employeesLabel" alignment="CENTER" layoutX="112.0" layoutY="338.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="employees" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="32.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="employeesImage" fitHeight="320.0" fitWidth="260.0" layoutX="112.0" layoutY="18.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/OIP%20(1).jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="controlPage" prefHeight="804.0" prefWidth="1084.0" style="-fx-background-color: #0cb4cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="newUserLabel" alignment="CENTER" layoutX="664.0" layoutY="334.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="new user" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="shiftsLabel" alignment="CENTER" layoutX="664.0" layoutY="732.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="shifts" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="usersLabel" alignment="CENTER" layoutX="136.0" layoutY="334.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="users" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="slariesLabel" alignment="CENTER" layoutX="136.0" layoutY="732.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="salaries" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="shiftsImage" fitHeight="320.0" fitWidth="260.0" layoutX="664.0" layoutY="412.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/slaes.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.7368420958518982" green="0.7368420958518982" blue="0.7368420958518982" />
+                           </color></InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="newUserImage" fitHeight="320.0" fitWidth="260.0" layoutX="664.0" layoutY="14.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/new%20user.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.38947367668151855" green="0.38947367668151855" blue="0.38947367668151855" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="usersImage" fitHeight="320.0" fitWidth="260.0" layoutX="136.0" layoutY="14.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/OIP%20(1).jpg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.4421052634716034" green="0.4421052634716034" blue="0.4421052634716034" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </ImageView>
+                  <ImageView fx:id="salariesImage" fitHeight="320.0" fitWidth="260.0" layoutX="136.0" layoutY="412.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/slary.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.38947367668151855" green="0.38947367668151855" blue="0.38947367668151855" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="productsPage" prefHeight="804.0" prefWidth="1084.0" style="-fx-background-color: #0cb4cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="newLabel" alignment="CENTER" layoutX="79.0" layoutY="582.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="new" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="searchLabel" alignment="CENTER" layoutX="742.0" layoutY="582.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="products" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="43.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="searchImage" fitHeight="360.0" fitWidth="260.0" layoutX="742.0" layoutY="222.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/search.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="newImage" fitHeight="360.0" fitWidth="260.0" layoutX="79.0" layoutY="222.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/new%20product.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.12796881794929504" green="0.08748538047075272" blue="0.6947368383407593" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label fx:id="updateLabel" alignment="CENTER" layoutX="412.0" layoutY="582.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="update " textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="updateImage" fitHeight="360.0" fitWidth="260.0" layoutX="412.0" layoutY="222.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/update%20product%202.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.12796881794929504" green="0.08748538047075272" blue="0.6947368383407593" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signOutPage" prefHeight="804.0" prefWidth="1084.0" style="-fx-background-color: #0cb4cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="signOutLabel" alignment="CENTER" layoutX="412.0" layoutY="553.0" prefHeight="58.0" prefWidth="260.0" style="-fx-background-color: #7a48dd;" text="sign out" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="signOutImage" fitHeight="360.0" fitWidth="260.0" layoutX="412.0" layoutY="193.0" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <image>
+                        <Image url="@../image/signout.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.42105263471603394" green="0.42105263471603394" blue="0.42105263471603394" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="aboutPage" prefHeight="804.0" prefWidth="1084.0" style="-fx-background-color: #0cb4cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="return13" alignment="CENTER" layoutX="430.0" layoutY="520.0" prefHeight="58.0" prefWidth="224.0" style="-fx-background-color: #7a48dd;" text="M.Ezzat" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="48.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="returnImage3" fitHeight="296.0" fitWidth="224.0" layoutX="430.0" layoutY="224.0" nodeOrientation="INHERIT" onMouseClicked="#clickImage" onMouseEntered="#enterImage" onMouseExited="#exitImage" pickOnBounds="true">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.2210526317358017" green="0.20959064364433289" blue="0.20959064364433289" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="@../image/IMG_20210728_114313.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane fx:id="sideBare" prefHeight="555.0" prefWidth="288.0" style="-fx-background-color: #7a48dd;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="logo" alignment="CENTER" layoutX="55.0" layoutY="-7.0" onMouseClicked="#selectPage" prefHeight="154.0" prefWidth="194.0" text="ME" textFill="WHITE">
+               <font>
+                  <Font name="Stencil" size="126.0" />
+               </font>
+               <padding>
+                  <Insets top="-22.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="-7.0" layoutY="104.0" prefHeight="44.0" prefWidth="317.0" text="Management Software" textFill="WHITE">
+               <font>
+                  <Font name="Stencil" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="-11.0" layoutY="126.0" prefHeight="44.0" prefWidth="326.0" text="-------------------------------------------------" textFill="WHITE">
+               <font>
+                  <Font name="Stencil" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="170.0" prefHeight="594.0" prefWidth="316.0" style="-fx-background-color: #7a48dd;">
+               <children>
+                  <Label fx:id="salesProcess" alignment="CENTER" layoutY="14.0" onMouseClicked="#selectPage" prefHeight="70.0" prefWidth="316.0" style="-fx-background-color: #7a48dd;" text="Sales Process" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="about" alignment="CENTER" layoutY="518.0" onMouseClicked="#selectPage" prefHeight="70.0" prefWidth="316.0" style="-fx-background-color: #7a48dd;" text="about" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="43.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="signOut" alignment="CENTER" layoutY="434.0" onMouseClicked="#selectPage" prefHeight="70.0" prefWidth="316.0" style="-fx-background-color: #7a48dd;" text="sign out" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="43.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="control" alignment="CENTER" layoutY="350.0" onMouseClicked="#selectPage" prefHeight="70.0" prefWidth="316.0" style="-fx-background-color: #7a48dd;" text="control" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="43.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="employees" alignment="CENTER" layoutY="266.0" onMouseClicked="#selectPage" prefHeight="70.0" prefWidth="316.0" style="-fx-background-color: #7a48dd;" text="employees" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="43.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="products" alignment="CENTER" layoutY="182.0" onMouseClicked="#selectPage" prefHeight="70.0" prefWidth="316.0" style="-fx-background-color: #7a48dd;" text="products" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="43.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="storage" alignment="CENTER" layoutY="98.0" onMouseClicked="#selectPage" prefHeight="70.0" prefWidth="316.0" style="-fx-background-color: #7a48dd;" text="Storage" textFill="WHITE">
+                     <font>
+                        <Font name="Stencil" size="43.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
